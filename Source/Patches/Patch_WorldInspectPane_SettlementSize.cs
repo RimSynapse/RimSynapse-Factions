@@ -1,7 +1,7 @@
 using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 using RimSynapse.RegionsAndTerritories.Integration;
 using Verse;
 

@@ -1,5 +1,5 @@
 using System;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 
 using RimSynapse.RegionsAndTerritories.Economy;
 

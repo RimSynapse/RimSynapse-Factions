@@ -1,5 +1,5 @@
 using RimSynapse.RegionsAndTerritories.Integration;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 
 namespace RimSynapse.Factions.Standing
 {

@@ -3,7 +3,7 @@ using RimSynapse.RegionsAndTerritories;
 using RimSynapse.Factions.Economy;
 using RimSynapse.RegionsAndTerritories.Economy;
 using RimSynapse.RegionsAndTerritories.Integration;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 using Verse;
 
 namespace RimSynapse.Factions

@@ -17,7 +17,7 @@
 //     net collectible income must not fall when a town becomes a city.
 using System;
 using RimSynapse.Factions.Economy;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 
 namespace TaxationTests
 {

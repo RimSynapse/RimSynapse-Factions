@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using RimSynapse.RegionsAndTerritories.Integration;
 using RimSynapse.RegionsAndTerritories.Placement;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 
 namespace RimSynapse.Factions.Standing
 {

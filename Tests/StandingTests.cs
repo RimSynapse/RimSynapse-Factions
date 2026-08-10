@@ -27,7 +27,7 @@ using System;
 using System.Collections.Generic;
 using RimSynapse.RegionsAndTerritories.Integration;
 using RimSynapse.RegionsAndTerritories.Placement;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 using RimSynapse.Factions.Standing;
 
 namespace StandingTests

@@ -10,7 +10,7 @@
 // has something to say.
 using System;
 using RimSynapse.Factions.Economy;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 using RimSynapse.RegionsAndTerritories.Economy;
 
 namespace ProductionTests

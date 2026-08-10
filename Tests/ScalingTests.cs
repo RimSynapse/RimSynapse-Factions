@@ -21,7 +21,7 @@ using RimSynapse.Factions;
 using RimWorld;
 using RimSynapse.Factions.Economy;
 using RimSynapse.RegionsAndTerritories.Economy;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 using Verse;
 
 namespace ScalingTests

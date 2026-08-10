@@ -6,7 +6,7 @@
 // grows, and that the tier effects cannot silently zero an economy.
 using System;
 using RimSynapse.RegionsAndTerritories.Integration;
-using RimSynapse.Factions.Sizing;
+using RimSynapse.RegionsAndTerritories.Sizing;
 
 namespace SizingTests
 {

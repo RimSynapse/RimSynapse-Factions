@@ -1,6 +1,7 @@
 using RimWorld;
 using RimSynapse.RegionsAndTerritories;
 using RimSynapse.RegionsAndTerritories.Integration;
+using RimSynapse.RegionsAndTerritories.Sizing;
 using RimSynapse.Factions.Military;
 using RimSynapse.RegionsAndTerritories.Placement;
 using Verse;

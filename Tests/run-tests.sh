@@ -53,15 +53,15 @@ run_suite() {
 
 run_suite sizing \
     Tests/RimWorldStubs.cs Tests/SizingTests.cs \
-    $RT/Integration/*.cs $SRC/Sizing/*.cs
+    $RT/Integration/*.cs $RT/Sizing/*.cs
 
 run_suite production \
     Tests/RimWorldStubs.cs Tests/ProductionTests.cs \
-    $RT/Integration/*.cs $RT/Economy/*.cs $SRC/Sizing/*.cs $SRC/Economy/*.cs
+    $RT/Integration/*.cs $RT/Economy/*.cs $RT/Sizing/*.cs $SRC/Economy/*.cs
 
 run_suite taxation \
     Tests/RimWorldStubs.cs Tests/TaxationTests.cs \
-    $RT/Integration/*.cs $RT/Economy/*.cs $SRC/Sizing/*.cs $SRC/Economy/*.cs
+    $RT/Integration/*.cs $RT/Economy/*.cs $RT/Sizing/*.cs $SRC/Economy/*.cs
 
 run_suite military \
     Tests/RimWorldStubs.cs Tests/MilitaryTests.cs \
@@ -69,16 +69,16 @@ run_suite military \
 
 run_suite standing \
     Tests/RimWorldStubs.cs Tests/StandingTests.cs \
-    $RT/Integration/*.cs $RT/Placement/*.cs $SRC/Sizing/*.cs $SRC/Standing/*.cs
+    $RT/Integration/*.cs $RT/Placement/*.cs $RT/Sizing/*.cs $SRC/Standing/*.cs
 
 run_suite scaling \
     Tests/RimWorldStubs.cs Tests/RimWorldStubsExt.cs Tests/ScalingTests.cs \
     $RT/Integration/*.cs $RT/Placement/*.cs $RT/Economy/*.cs \
-    $SRC/Sizing/*.cs $SRC/Economy/*.cs $SRC/Military/*.cs $SRC/Standing/*.cs \
+    $RT/Sizing/*.cs $SRC/Economy/*.cs $SRC/Military/*.cs $SRC/Standing/*.cs \
     $RT/WorldObjectPlacementUtility.cs $RT/OutpostPlacementUtility.cs \
     $RT/RegionalOwnershipUtility.cs $RT/GeographicProvince.cs \
     $RT/IRegionDemographicProvider.cs $RT/ProvinceAdjacency.cs \
-    $SRC/SettlementSizeUtility.cs $SRC/ProductionScalingUtility.cs \
+    $RT/SettlementSizeUtility.cs $SRC/ProductionScalingUtility.cs \
     $SRC/TaxationUtility.cs $SRC/MilitaryReachUtility.cs $SRC/FactionStandingUtility.cs
 
 # Not a suite: a type-check over the impure files that cannot be behaviour-tested without a running
@@ -92,11 +92,11 @@ rm -f "$OUT/typecheck.dll"
 if mcs -target:library -langversion:latest -nowarn:0169,0414,0649,0219,0067 -out:"$OUT/typecheck.dll" \
     Tests/RimWorldStubs.cs Tests/RimWorldStubsExt.cs \
     $RT/Integration/*.cs $RT/Placement/*.cs $RT/Economy/*.cs \
-    $SRC/Sizing/*.cs $SRC/Economy/*.cs $SRC/Military/*.cs $SRC/Standing/*.cs \
+    $RT/Sizing/*.cs $SRC/Economy/*.cs $SRC/Military/*.cs $SRC/Standing/*.cs \
     $RT/WorldObjectPlacementUtility.cs $RT/OutpostPlacementUtility.cs \
     $RT/RegionalOwnershipUtility.cs $RT/GeographicProvince.cs \
     $RT/IRegionDemographicProvider.cs $RT/ProvinceAdjacency.cs \
-    $SRC/SettlementSizeUtility.cs $SRC/ProductionScalingUtility.cs \
+    $RT/SettlementSizeUtility.cs $SRC/ProductionScalingUtility.cs \
     $SRC/TaxationUtility.cs $SRC/MilitaryReachUtility.cs $SRC/FactionStandingUtility.cs; then
     echo "  type-check clean"
 else
