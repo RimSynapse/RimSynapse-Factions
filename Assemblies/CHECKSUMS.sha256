@@ -1,0 +1,6 @@
+# RimSynapse Factions — shipped assembly manifest
+# version: 0.7.0
+# commit:  635b0b2
+# format:  sha256sum — verify with 'verify-binaries.ps1' or 'sha256sum -c'
+e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d  Newtonsoft.Json.dll
+e04fabb70280fabe5a9eb7c9d930c99e7a9048358af4b3eb39b7a94eac89cc36  RimSynapseFactions.dll
